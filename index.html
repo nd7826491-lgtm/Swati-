@@ -91,16 +91,10 @@ pointer-events:none;
 
 <audio id="music">
 <source src="inaam-song.mp3" type="audio/mpeg">
-</audio>
-<img id="slider" src="IMG_20260918_071323_816.jpg">
 
-<h2>🎵 Birthday Music</h2>
+<audio
 
-<audio controls>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
 
-<h2>💌 From Shubham</h2>
 <h2>💌 From Shubham</h2>
 
 <p>
@@ -156,15 +150,26 @@ heart.remove();
 },8000);
 }
 
-<h2>🎵 Birthday Music</h2>
+setInterval(createHeart,700);
 
-<audio controls>
-  <source src="music.mp3" type="audio/mpeg">
-  Your browser does not support audio.
-</audio>
 
-<script>
-function playMusic(){
-  document.getElementById("music").play();
+function createHeart(){
+const heart=document.createElement("div");
+heart.innerHTML="❤️";
+heart.classList.add("floating-heart");
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(20+Math.random()*30)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
 }
+
+setInterval(createHeart,700);
 </script>
+
+</body>
+</html>
+
