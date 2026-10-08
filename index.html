@@ -4,7 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Swati ❤️</title>
+<h2>❤️ Swati's Beautiful Memories ❤️</h2>
 
+<div style="text-align:center;">
+  <img id="slider"
+       src="IMG_20260918_071323_816.jpg"
+       style="width:90%;max-width:350px;border-radius:20px;box-shadow:0 0 15px rgba(0,0,0,0.3);">
+</div>
+
+<script>
+const photos = [
+"IMG_20260918_071323_816.jpg",
+"IMG_20260918_071311_999.jpg",
+"IMG_20260918_071305_113.jpg",
+"IMG_20260918_065223_119.jpg"
+];
+
+let current = 0;
+
+setInterval(() => {
+  current = (current + 1) % photos.length;
+  document.getElementById("slider").src = photos[current];
+}, 3000);
+</script>
 <style>
 body{
 margin:0;
