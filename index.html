@@ -1,32 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Swati ❤️</title>
-<h2>❤️ Swati's Beautiful Memories ❤️</h2>
 
-<div style="text-align:center;">
-  <img id="slider"
-       src="IMG_20260918_071323_816.jpg"
-       style="width:90%;max-width:350px;border-radius:20px;box-shadow:0 0 15px rgba(0,0,0,0.3);">
-</div>
-
-<script>
-const photos = [
-"IMG_20260918_071323_816.jpg",
-"IMG_20260918_071311_999.jpg",
-"IMG_20260918_071305_113.jpg",
-"IMG_20260918_065223_119.jpg"
-];
-
-let current = 0;
-
-setInterval(() => {
-  current = (current + 1) % photos.length;
-  document.getElementById("slider").src = photos[current];
-}, 3000);
-</script>
 <style>
 body{
 margin:0;
@@ -34,8 +13,9 @@ font-family:Arial,sans-serif;
 background:linear-gradient(135deg,#ff9a9e,#fad0c4);
 text-align:center;
 color:white;
+overflow-x:hidden;
 }
-<source src="inaam-song.mp3" type="audio/mpeg">
+
 .screen{
 padding:20px;
 min-height:100vh;
@@ -55,140 +35,133 @@ text-align:center;
 
 button{
 padding:12px 20px;
-margin-top:10px;
+font-size:18px;
 border:none;
 border-radius:10px;
-font-size:18px;
-background:#ff4d6d;
-color:white;
 cursor:pointer;
+margin-top:10px;
 }
 
 .hidden{
 display:none;
 }
 
-.hearts{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:15px;
-padding:20px;
+img{
+width:90%;
+max-width:350px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
 }
 
-.heart{
-font-size:35px;
-cursor:pointer;
-background:white;
-padding:10px;
-border-radius:15px;
-}
-
-.popup{
+.floating-heart{
 position:fixed;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-background:white;
-color:black;
-padding:20px;
-width:80%;
-border-radius:15px;
-display:none;
-box-shadow:0 0 20px rgba(0,0,0,0.3);
+bottom:-20px;
+font-size:24px;
+animation:float 8s linear infinite;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-100vh);opacity:0;}
 }
 </style>
 </head>
 
 <body>
 
-<div id="login" class="screen">
+<div id="lockScreen" class="screen">
 <h1>🎂 Happy Birthday Swati ❤️</h1>
-<p>A Special Surprise From Shubham</p>
-<input type="password" id="pass" placeholder="Enter Passcode">
-<button onclick="unlock()">Unlock ❤️</button>
+<p>Enter Passcode</p>
+<input type="password" id="passcode" placeholder="Passcode">
+<button onclick="unlock()">Open ❤️</button>
 </div>
 
-<div id="main" class="screen hidden">
-<h1>Happy Birthday Swati ❤️</h1>
-<p>Tap any heart to reveal a hidden message</p>
+<div id="mainContent" class="screen hidden">
 
-<div class="hearts">
+<h1>❤️ Swati ❤️</h1>
 
-<div class="heart" onclick="showMsg(0)">❤️</div>
-<div class="heart" onclick="showMsg(1)">❤️</div>
-<div class="heart" onclick="showMsg(2)">❤️</div>
-<div class="heart" onclick="showMsg(3)">❤️</div>
-<div class="heart" onclick="showMsg(4)">❤️</div>
-<div class="heart" onclick="showMsg(5)">❤️</div>
-<div class="heart" onclick="showMsg(6)">❤️</div>
-<div class="heart" onclick="showMsg(7)">❤️</div>
-<div class="heart" onclick="showMsg(8)">❤️</div>
-<div class="heart" onclick="showMsg(9)">❤️</div>
-<div class="heart" onclick="showMsg(10)">❤️</div>
-<div class="heart" onclick="showMsg(11)">❤️</div>
-<div class="heart" onclick="showMsg(12)">❤️</div>
-<div class="heart" onclick="showMsg(13)">❤️</div>
-<div class="heart" onclick="showMsg(14)">❤️</div>
-<div class="heart" onclick="showMsg(15)">❤️</div>
-<div class="heart" onclick="showMsg(16)">❤️</div>
-<div class="heart" onclick="showMsg(17)">❤️</div>
-<div class="heart" onclick="showMsg(18)">❤️</div>
-<div class="heart" onclick="showMsg(19)">❤️</div>
+<h2>📸 Memories</h2>
 
-</div>
-</div>
+<img id="slider" src="IMG_20260918_071323_816.jpg">
 
-<div class="popup" id="popup">
-<p id="message"></p>
-<button onclick="closePopup()">Close</button>
+<br><br>
+
+<button onclick="playMusic()">🎵 Play Music</button>
+
+<audio id="music">
+<source src="inaam-song.mp3" type="audio/mpeg">
+</audio>
+
+<h2>💌 From Shubham</h2>
+
+<p>
+You are the most beautiful part of my life ❤️<br>
+Happy Birthday Swati 🎂🌹
+</p>
+
 </div>
 
 <script>
 
 function unlock(){
-let p=document.getElementById("pass").value;
+let code=document.getElementById("passcode").value;
 
-if(p=="143"){
-document.getElementById("login").classList.add("hidden");
-document.getElementById("main").classList.remove("hidden");
-}else{
+if(code==="143"){
+document.getElementById("lockScreen").classList.add("hidden");
+document.getElementById("mainContent").classList.remove("hidden");
+}
+else{
 alert("Wrong Passcode ❤️");
 }
 }
 
-const messages=[
-"Happy Birthday Swati, tumhari khushi meri sabse pyari dua hai.",
-"Kuch log zindagi mein aate hain aur dil mein hamesha ke liye reh jaate hain, tum unmein se ho.",
-"Tumhari muskaan kisi bhi bure din ko achha bana sakti hai.",
-"Shayad main har baat keh nahi pata, par tum mere liye bahut special ho.",
-"Tumhari har khushi meri duaon ka hissa hai.",
-"Jab bhi tum yaad aati ho, chehre par ek alag si smile aa jaati hai.",
-"Tumhari ahmiyat shabdon mein bayan karna mushkil hai.",
-"Zindagi ke har mod par tum hamesha khush raho.",
-"Kuch rishton ko naam ki zarurat nahi hoti, bas ehsaas kaafi hota hai.",
-"Tumhari ek chhoti si baat bhi dil ko sukoon de jaati hai.",
-"Har saal tumhare liye aur bhi zyada khushiyan lekar aaye.",
-"Tum waise hi rehna jaise ho, kyunki tumhari asli pehchaan hi sabse khoobsurat hai.",
-"Meri har achhi dua mein tumhara naam zaroor hota hai.",
-"Tumhari khushi dekh kar dil ko sach mein sukoon milta hai.",
-"Kabhi bhi khud ko akela mat samajhna.",
-"Tumhari yaadein meri zindagi ke sabse khoobsurat lamhon mein se hain.",
-"Tumhari muskurahat hamesha bani rahe, bas yahi chahta hoon.",
-"Jo baatein kabhi keh nahi paaya, unmein sabse zyada tumhara zikr hai.",
-"Thank you, sirf tum hone ke liye.",
-"Happy Birthday Swati ❤️ — Tumhari zindagi pyaar, sukoon aur khushiyon se hamesha bhari rahe. — Shubham"
+function playMusic(){
+document.getElementById("music").play();
+}
+
+const photos=[
+"IMG_20260918_071323_816.jpg",
+"IMG_20260918_071311_999.jpg",
+"IMG_20260918_071305_113.jpg",
+"IMG_20260918_065223_119.jpg"
 ];
 
-function showMsg(i){
-document.getElementById("message").innerText=messages[i];
-document.getElementById("popup").style.display="block";
+let current=0;
+
+setInterval(()=>{
+current=(current+1)%photos.length;
+document.getElementById("slider").src=photos[current];
+},3000);
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.innerHTML="❤️";
+heart.classList.add("floating-heart");
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(20+Math.random()*30)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
 }
 
-function closePopup(){
-document.getElementById("popup").style.display="none";
-}
+setInterval(createHeart,700);
 
 </script>
 
 </body>
 </html>
+<button onclick="playMusic()">🎵 Play Music</button>
+
+<audio id="music">
+  <source src="inaam-song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playMusic(){
+  document.getElementById("music").play();
+}
+</script>
