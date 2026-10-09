@@ -530,10 +530,52 @@ footer{
   </section>
 
 
-  <!-- GIFT BOX -->
-  <section class="card">
-    <h2>🎁 A Little Birthday Gift</h2>
-    <p>There is a tiny surprise waiting inside. Open it! 💝</p>
+  <!-- GIFT BOX SURPRISE -->
+<section class="card">
+  <h2>🎁 A Special Gift For Swati 🎁</h2>
+  <p>Swati, tumhare liye ek chhota sa surprise hai! ❤️</p>
+
+  <button id="giftButton" onclick="openGiftSurprise()"
+    style="font-size:75px;background:none;box-shadow:none;">
+    🎁
+  </button>
+
+  <p id="giftHint">Gift kholne ke liye box par tap karo 💝</p>
+
+  <div id="giftSurprise" class="hidden">
+    <h2>🎉 Surprise, Swati! 🎉</h2>
+
+    <div style="font-size:35px;">
+      💖 💕 ❤️ 💗 💝 💗 ❤️ 💕 💖
+    </div>
+
+    <div class="letter" style="margin-top:20px;">
+      <h2>💌 Dear Swati ❤️</h2>
+
+      <p>
+        Tumhare liye meri taraf se ek chhota sa gift! 🎁
+        <br><br>
+        Main dua karta hoon ki tumhari life hamesha
+        khushiyon se bhari rahe. 🌹
+        <br><br>
+        Tumhare saare dreams poore hon, tum hamesha
+        muskurati raho aur tumhe life mein bahut saara
+        pyaar aur success mile. 🥹💖
+        <br><br>
+        Tumhara birthday bahut special ho,
+        aur tumhari har nayi subah ek nayi khushi lekar aaye. 🌸
+        <br><br>
+        <b>Happy Birthday, Swati! 🎂❤️</b>
+        <br><br>
+        With lots of love,<br>
+        <b>From Shubham ❤️🫶</b>
+      </p>
+    </div>
+  </div>
+</section>
+      
+  
+
 
     <span
       class="gift"
@@ -792,11 +834,14 @@ function sendKisses(){
   }
 }
 
+function openGiftSurprise(){
+  document.getElementById("giftSurprise").classList.remove("hidden");
+  document.getElementById("giftHint").textContent =
+    "Tumhare liye dher saara pyaar, Swati! ❤️";
 
-/* GIFT BOX */
-function openGift(){
-  document.getElementById("giftMessage").classList.remove("hidden");
-  createHearts(12);
+  document.getElementById("giftButton").textContent = "💝";
+
+  createHearts(25);
 }
 
 
