@@ -118,7 +118,11 @@ alert("Wrong Passcode ❤️");
 }
 
 function playMusic(){
-document.getElementById("music").play();
+  const music = document.getElementById("music");
+
+  music.play().catch(function(error){
+    alert("Bhai, inaam-song.mp3 file check karo ❤️");
+  });
 }
 
 const photos=[
