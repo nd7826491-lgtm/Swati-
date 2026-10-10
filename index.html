@@ -2,888 +2,352 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Swati ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Swati ❤️</title>
 
 <style>
-*{
-  box-sizing:border-box;
-}
-
-:root{
-  --pink:#ff4f87;
-  --dark:#7a1744;
-  --light:#fff0f6;
-  --white:rgba(255,255,255,.85);
-}
-
+*{box-sizing:border-box}
 body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  color:#74264b;
-  text-align:center;
-  background:linear-gradient(135deg,#ffe0ed,#ffc2d9,#f8d9ff);
-  overflow-x:hidden;
+ margin:0;font-family:Arial,sans-serif;text-align:center;
+ color:#84234f;
+ background:linear-gradient(135deg,#ffe0ed,#f8d9ff);
 }
-
-button,input{
-  font-family:inherit;
-}
-
-button{
-  border:0;
-  padding:13px 21px;
-  margin:7px;
-  border-radius:30px;
-  background:linear-gradient(135deg,#ff4f87,#ff85ab);
-  color:white;
-  font-size:16px;
-  font-weight:bold;
-  box-shadow:0 5px 15px #d64d8044;
-  cursor:pointer;
-  transition:.25s;
-}
-
-button:active{
-  transform:scale(.96);
-}
-
-button:hover{
-  filter:brightness(1.05);
-}
-
-h1{
-  color:#a31e58;
-}
-
-h2{
-  color:#b62d68;
-}
-
-p{
-  line-height:1.8;
-}
-
-.hidden{
-  display:none!important;
-}
-
+.hidden{display:none!important}
 .screen{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  padding:24px 15px;
+ min-height:100vh;min-height:100dvh;
+ padding:22px 15px;
+ display:flex;flex-direction:column;
+ justify-content:center;align-items:center;
 }
-
-.lock-card{
-  width:100%;
-  max-width:390px;
-  padding:30px 20px;
-  border:1px solid #ffffffb8;
-  border-radius:28px;
-  background:#ffffffaa;
-  box-shadow:0 15px 40px #b33e7040;
-}
-
-.lock-heart{
-  font-size:65px;
-  animation:beat 1.2s infinite;
-}
-
-input{
-  width:90%;
-  max-width:280px;
-  padding:14px;
-  border:1px solid #ff9aba;
-  border-radius:15px;
-  font-size:18px;
-  text-align:center;
-  outline:none;
-}
-
-#mainContent{
-  padding:15px;
-  max-width:760px;
-  margin:auto;
-}
-
-.hero{
-  padding:32px 15px;
-  margin:15px 0 25px;
-  background:linear-gradient(135deg,#ffffffb8,#ffd5e7b8);
-  border:1px solid white;
-  border-radius:30px;
-  box-shadow:0 10px 30px #a42b5d25;
-}
-
-.hero h1{
-  font-size:clamp(30px,8vw,48px);
-  margin:10px 0;
-}
-
-.badge{
-  display:inline-block;
-  background:#fff;
-  padding:9px 15px;
-  border-radius:30px;
-  color:#b62d68;
-  font-weight:bold;
-}
-
 .card{
-  margin:22px 0;
-  padding:24px 17px;
-  background:var(--white);
-  border:1px solid #ffffffd9;
-  border-radius:25px;
-  box-shadow:0 8px 25px #a42b5d1c;
+ width:100%;max-width:440px;
+ padding:25px 18px;margin:auto;
+ background:#ffffffd9;border:1px solid white;
+ border-radius:28px;
+ box-shadow:0 12px 35px #a42b5d25;
 }
-
-#slider{
-  width:100%;
-  max-width:400px;
-  height:auto;
-  max-height:440px;
-  object-fit:contain;
-  border:5px solid white;
-  border-radius:22px;
-  box-shadow:0 8px 25px #b43a6b33;
-  transition:opacity .4s;
+h1{color:#bd2868;font-size:clamp(27px,7vw,38px)}
+h2{color:#bd2868}
+p{line-height:1.8}
+button{
+ border:0;border-radius:25px;padding:13px 20px;
+ margin:7px;background:linear-gradient(135deg,#ff4383,#ff91b7);
+ color:white;font-size:16px;font-weight:bold;
+ cursor:pointer;
 }
-
-.photo-caption{
-  color:#a12d60;
-  font-size:14px;
+input{
+ width:90%;max-width:270px;padding:14px;
+ border:1px solid #ff91b7;border-radius:14px;
+ text-align:center;font-size:18px;
 }
-
-.music-status{
-  font-size:13px;
+.emoji{font-size:65px;animation:beat 1.2s infinite}
+.photo{
+ width:100%;max-width:340px;max-height:48vh;
+ object-fit:contain;border:5px solid white;
+ border-radius:20px;
 }
-
 .letter{
-  text-align:left;
-  padding:20px;
-  border-radius:20px;
-  background:linear-gradient(135deg,#fff7fb,#ffe5ef);
-  line-height:1.95;
-  white-space:normal;
+ background:#fff4f9;padding:18px;border-radius:18px;
+ text-align:left;line-height:1.9;
 }
-
-.divider{
-  width:80%;
-  height:2px;
-  border:0;
-  background:linear-gradient(90deg,transparent,#ff80ad,transparent);
-  margin:25px auto;
+.hearts{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:9px;
 }
-
-.countdown{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
+.hearts button{margin:0;padding:13px 5px}
+#message{font-weight:bold;line-height:1.8}
+@keyframes beat{50%{transform:scale(1.13)}}
+@keyframes float{
+ from{transform:translateY(0);opacity:1}
+ to{transform:translateY(-100vh);opacity:0}
 }
-
-.time-box{
-  background:#fff;
-  padding:15px 9px;
-  border-radius:17px;
-  min-width:65px;
-  box-shadow:0 5px 15px #a42b5d18;
-}
-
-.time-box strong{
-  display:block;
-  font-size:25px;
-  color:#d52c72;
-}
-
-.time-box span{
-  font-size:11px;
-}
-
-.heart-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:12px;
-}
-
-.heart-card{
-  min-height:105px;
-  padding:15px 8px;
-  background:#fff;
-  border:1px solid #ffd0e1;
-  border-radius:20px;
-  color:#b52d67;
-  font-size:17px;
-  box-shadow:0 5px 12px #a42b5d12;
-}
-
-.heart-card span{
-  display:block;
-  font-size:30px;
-  margin-bottom:7px;
-}
-
-.timeline{
-  text-align:left;
-  margin:10px 0;
-  padding-left:20px;
-  border-left:3px solid #ff8bb5;
-}
-
-.timeline-item{
-  position:relative;
-  margin:20px 0;
-  padding:15px;
-  border-radius:15px;
-  background:#fff;
-}
-
-.timeline-item:before{
-  content:"❤️";
-  position:absolute;
-  left:-32px;
-  top:14px;
-}
-
-.secret-box{
-  padding:18px;
-  border:2px dashed #ff8ab4;
-  border-radius:20px;
-  background:#fff5fa;
-}
-
-#secretMessage{
-  font-size:18px;
-  font-weight:bold;
-  line-height:1.9;
-}
-
-.gift{
-  font-size:85px;
-  display:block;
-  cursor:pointer;
-  animation:giftBounce 1.5s infinite;
-}
-
-#giftMessage,#finalMessage{
-  line-height:1.9;
-  font-size:18px;
-}
-
-#finalMessage{
-  background:linear-gradient(135deg,#fff,#ffe0ed);
-  padding:22px;
-  border-radius:20px;
-}
-
-footer{
-  padding:35px 10px;
-  color:#8c2452;
-}
-
-.floating-heart{
-  position:fixed;
-  bottom:-35px;
-  z-index:20;
-  pointer-events:none;
-  animation:floatUp 7s linear forwards;
-}
-
-.kiss{
-  position:fixed;
-  z-index:50;
-  pointer-events:none;
-  font-size:40px;
-  animation:kissPop 1.4s ease-out forwards;
-}
-
-@keyframes floatUp{
-  0%{transform:translateY(0) rotate(0);opacity:0}
-  10%{opacity:.9}
-  100%{transform:translateY(-110vh) rotate(40deg);opacity:0}
-}
-
-@keyframes beat{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.16)}
-}
-
-@keyframes giftBounce{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-8px)}
-}
-
-@keyframes kissPop{
-  0%{transform:scale(.3);opacity:0}
-  25%{transform:scale(1.3);opacity:1}
-  100%{transform:translateY(-100px) scale(1);opacity:0}
-}
-
-@media(max-width:380px){
-  .heart-grid{gap:8px}
-  .heart-card{font-size:15px}
-  .time-box{min-width:58px}
+.floating{
+ position:fixed;bottom:-30px;pointer-events:none;
+ animation:float 5s linear forwards;z-index:10;
 }
 </style>
 </head>
-
 <body>
 
-<!-- PASSCODE SCREEN -->
-<div id="lockScreen" class="screen">
-  <div class="lock-card">
-    <div class="lock-heart">💗</div>
-    <h1>For My Special Swati</h1>
-    <p>A little world made just for you. 🌸</p>
-    <p>🔐 Enter your secret passcode</p>
-
-    <input
-      type="password"
-      id="passcode"
-      placeholder="Enter passcode"
-      inputmode="numeric"
-      maxlength="20"
-    >
-
-    <br>
-    <button onclick="unlock()">Open Your Surprise 💌</button>
-    <p style="font-size:13px">Made with love by Shubham ❤️</p>
-  </div>
-</div>
-
-
-<!-- MAIN WEBSITE -->
-<main id="mainContent" class="hidden">
-
-  <section class="hero">
-    <span class="badge">✨ A little surprise for you ✨</span>
-    <h1>Happy Birthday<br>Swati ❤️</h1>
-    <p>To the girl who deserves all the happiness in the world. 🌷</p>
-    <p>💗 Made with lots of love by Shubham 💗</p>
-    <button onclick="document.getElementById('memories').scrollIntoView({behavior:'smooth'})">
-      Start Our Surprise 💝
-    </button>
-  </section>
-
-
-  <!-- MUSIC -->
-  <section class="card">
-    <h2>🎵 A Song For You</h2>
-    <p>Let this little melody make your day more beautiful. 💕</p>
-    <button onclick="playMusic()">▶ Play / Pause Music</button>
-    <p id="musicStatus" class="music-status">Tap to play your song 🎶</p>
-
-    <audio id="music" preload="none" loop>
-      <source src="music.mp3" type="audio/mpeg">
-    </audio>
-  </section>
-
-
-  <!-- PHOTOS -->
-  <section class="card" id="memories">
-    <h2>📸 Our Beautiful Memories</h2>
-    <p>Every picture holds a little piece of happiness. ❤️</p>
-
-    <img
-      id="slider"
-      src="IMG_20260918_071323_816.jpg"
-      alt="Beautiful memory"
-    >
-
-    <p class="photo-caption">A little memory, a lot of feelings. 🌹</p>
-
-    <button onclick="previousPhoto()">❮ Previous</button>
-    <button onclick="nextPhoto()">Next ❯</button>
-  </section>
-
-
-  <!-- COUNTDOWN -->
-  <section class="card">
-    <h2>🎂 Countdown To Your Special Day</h2>
-    <p>Counting every moment until your birthday! 💖</p>
-
-    <div class="countdown">
-      <div class="time-box">
-        <strong id="days">00</strong>
-        <span>Days</span>
-      </div>
-
-      <div class="time-box">
-        <strong id="hours">00</strong>
-        <span>Hours</span>
-      </div>
-
-      <div class="time-box">
-        <strong id="minutes">00</strong>
-        <span>Minutes</span>
-      </div>
-
-      <div class="time-box">
-        <strong id="seconds">00</strong>
-        <span>Seconds</span>
-      </div>
-    </div>
-
-    <h3 id="countdownMessage">October 17, 2026 ❤️</h3>
-  </section>
-
-
-  <!-- LOVE LETTER -->
-  <section class="card">
-    <h2>💌 A Special Letter For Swati</h2>
-
-    <div class="letter">
-      Dear Swati ❤️🥹<br><br>
-
-      Tum meri life ka ek bahut special hissa ho.
-      Tumhari smile mere chehre par khushi le aati hai,
-      aur tumhari happiness mere liye bahut important hai. 💗<br><br>
-
-      Main chahta hoon ki tumhari life hamesha khushiyon se bhari rahe.
-      Tumhare saare dreams poore hon aur tum hamesha muskurati raho. 🌹✨<br><br>
-
-      Tumhari har memory mere liye special hai.
-      Tum hamesha khush rehna aur apni beautiful smile kabhi mat khona. 🫶❤️<br><br>
-
-      Chahe life mein kitne bhi ups and downs aayein,
-      meri dua hai ki tumhare chehre ki smile kabhi kam na ho.
-      Tumhe hamesha pyaar, respect aur khushiyan milein. 💖<br><br>
-
-      Happy Birthday, Swati! 🎂🎉<br>
-      Tumhari life pyaar aur khushiyon se bhari rahe. 💝<br><br>
-
-      <b>Lots of love,</b><br>
-      <b>From Shubham ❤️</b>
-    </div>
-  </section>
-
-
-  <!-- CLICKABLE HEARTS -->
-  <section class="card">
-    <h2>❤️ 20 Little Hearts For You</h2>
-    <p>Har heart par tap karo aur ek special message padho. 🥰</p>
-
-    <div class="heart-grid" id="heartGrid"></div>
-
-    <p id="heartMessage" aria-live="polite">
-      Choose a heart to open your message. 💌
-    </p>
-  </section>
-
-
-  <!-- SECRET MESSAGE -->
-  <section class="card">
-    <h2>🤫 A Little Secret</h2>
-
-    <div class="secret-box">
-      <p>There is something I want you to know...</p>
-
-      <button onclick="revealSecret()">Open My Secret 💗</button>
-
-      <p id="secretMessage" class="hidden">
-        Swati, tumhari happiness mere liye bahut precious hai. ❤️<br>
-        I hope life gives you a thousand reasons to smile.
-        You deserve all the beautiful things this world has to offer. 🌹
-      </p>
-    </div>
-  </section>
-
-
-  <!-- LOVE STORY -->
-  <section class="card">
-    <h2>🌷 Our Little Story</h2>
-    <p>Some moments become special just because of the person in them. 💞</p>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>🌸 A Special Beginning</h3>
-        <p>Some people slowly become an important part of our thoughts and memories.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>💗 Beautiful Little Moments</h3>
-        <p>Small conversations, smiles and memories can make ordinary days special.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>🌹 A Wish For You</h3>
-        <p>I hope your future is filled with success, peace, happiness and beautiful surprises.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>🎂 Your Special Day</h3>
-        <p>Today is all about celebrating you and the happiness you deserve!</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- KISS ANIMATION -->
-  <section class="card">
-    <h2>💋 Sending You Some Love</h2>
-    <p>A little virtual kiss and lots of birthday wishes! 🥰</p>
-    <button onclick="sendKisses()">Tap For A Surprise 💋</button>
-  </section>
-
-
-  <!-- GIFT BOX SURPRISE -->
-<section class="card">
-  <h2>🎁 A Special Gift For Swati 🎁</h2>
-  <p>Swati, tumhare liye ek chhota sa surprise hai! ❤️</p>
-
-  <button id="giftButton" onclick="openGiftSurprise()"
-    style="font-size:75px;background:none;box-shadow:none;">
-    🎁
-  </button>
-
-  <p id="giftHint">Gift kholne ke liye box par tap karo 💝</p>
-
-  <div id="giftSurprise" class="hidden">
-    <h2>🎉 Surprise, Swati! 🎉</h2>
-
-    <div style="font-size:35px;">
-      💖 💕 ❤️ 💗 💝 💗 ❤️ 💕 💖
-    </div>
-
-    <div class="letter" style="margin-top:20px;">
-      <h2>💌 Dear Swati ❤️</h2>
-
-      <p>
-        Tumhare liye meri taraf se ek chhota sa gift! 🎁
-        <br><br>
-        Main dua karta hoon ki tumhari life hamesha
-        khushiyon se bhari rahe. 🌹
-        <br><br>
-        Tumhare saare dreams poore hon, tum hamesha
-        muskurati raho aur tumhe life mein bahut saara
-        pyaar aur success mile. 🥹💖
-        <br><br>
-        Tumhara birthday bahut special ho,
-        aur tumhari har nayi subah ek nayi khushi lekar aaye. 🌸
-        <br><br>
-        <b>Happy Birthday, Swati! 🎂❤️</b>
-        <br><br>
-        With lots of love,<br>
-        <b>From Shubham ❤️🫶</b>
-      </p>
-    </div>
-  </div>
+<!-- PASSCODE -->
+<section id="lock" class="screen">
+ <div class="card">
+  <div class="emoji">💗</div>
+  <h1>For My Special Swati</h1>
+  <p>A little world made just for you 🌸</p>
+  <p>Enter your secret passcode 🔐</p>
+  <input id="code" type="password" inputmode="numeric"
+   placeholder="Enter passcode">
+  <br>
+  <button onclick="unlock()">Open Your Surprise 💌</button>
+  <p>Made with love by Shubham ❤️</p>
+ </div>
 </section>
-      
-  
 
+<!-- SCREEN 1 -->
+<section id="s1" class="screen hidden">
+ <div class="card">
+  <div class="emoji">💌</div>
+  <p>✨ A little surprise for you ✨</p>
+  <h1>Happy Birthday<br>Swati ❤️</h1>
+  <p>To someone who deserves all the happiness in the world. 🌷</p>
+  <p>Made with lots of love by Shubham 💖</p>
+  <button onclick="go(2)">Start Our Surprise 💝 ➜</button>
+ </div>
+</section>
 
-    <span
-      class="gift"
-      role="button"
-      tabindex="0"
-      onclick="openGift()"
-      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGift()}"
-    >🎁</span>
+<!-- SCREEN 2 -->
+<section id="s2" class="screen hidden">
+ <div class="card">
+  <h1>🎵 A Song For You</h1>
+  <p>Let this melody make your day beautiful. 💕</p>
+  <audio id="music" src="music.mp3" loop></audio>
+  <button onclick="playMusic()">▶ Play / Pause Music</button>
+  <p id="musicStatus">Your special song 🎶</p>
+  <button onclick="go(3)">Next: Our Memories ➜</button>
+ </div>
+</section>
 
-    <button onclick="openGift()">Open Your Gift ❤️</button>
+<!-- SCREEN 3 -->
+<section id="s3" class="screen hidden">
+ <div class="card">
+  <h1>📸 Our Memories</h1>
+  <img id="photo" class="photo"
+   src="IMG_20260918_071323_816.jpg" alt="Memory">
+  <p id="photoCount">Memory 1 of 4 ❤️</p>
+  <button onclick="changePhoto(-1)">❮ Previous</button>
+  <button onclick="changePhoto(1)">Next ❯</button>
+  <br>
+  <button onclick="go(4)">Birthday Countdown ➜</button>
+ </div>
+</section>
 
-    <div id="giftMessage" class="hidden">
-      <h3>🎉 Surprise, Swati! 🎉</h3>
-      <p>
-        Your gift is a wish from the heart:<br>
-        May your dreams come true, your heart stay peaceful,
-        and your life be full of beautiful memories. 💗🌷
-      </p>
-      <span style="font-size:45px">💐🎂💖</span>
-    </div>
-  </section>
+<!-- SCREEN 4 -->
+<section id="s4" class="screen hidden">
+ <div class="card">
+  <h1>🎂 Your Special Day</h1>
+  <p>Every second is a reason to celebrate you! ❤️</p>
+  <h2 id="countdown">17 October 2026</h2>
+  <button onclick="go(5)">Read My Letter 💌 ➜</button>
+ </div>
+</section>
 
+<!-- SCREEN 5 -->
+<section id="s5" class="screen hidden">
+ <div class="card">
+  <h1>💌 Dear Swati</h1>
+  <div class="letter">
+   Tum meri life ka ek bahut special hissa ho. ❤️
+   <br><br>
+   Tumhari smile mere chehre par khushi le aati hai.
+   Main chahta hoon ki tumhari life hamesha khushiyon
+   se bhari rahe aur tumhare saare dreams poore hon. 🌹
+   <br><br>
+   Tum hamesha muskurati rehna aur apni beautiful smile
+   kabhi mat khona. Tumhe hamesha pyaar, respect aur
+   khushiyan milein. 💖
+   <br><br>
+   Happy Birthday, Swati! 🎂
+   <br><br>
+   <b>Lots of love,<br>Shubham ❤️</b>
+  </div>
+  <button onclick="go(6)">20 Little Hearts ❤️ ➜</button>
+ </div>
+</section>
 
-  <!-- FINAL SURPRISE -->
-  <section class="card">
-    <h2>🥹 One Last Surprise</h2>
-    <p>Save this little message in your heart. ❤️</p>
+<!-- SCREEN 6 -->
+<section id="s6" class="screen hidden">
+ <div class="card">
+  <h1>❤️ 20 Little Hearts</h1>
+  <p>Har heart dabao aur special message padho! 🥹</p>
+  <div class="hearts" id="heartGrid"></div>
+  <p id="message">Choose a heart 💌</p>
+  <button onclick="go(7)">A Little Secret 🤫 ➜</button>
+ </div>
+</section>
 
-    <button onclick="showFinalMessage()">Open My Heart 💌</button>
+<!-- SCREEN 7 -->
+<section id="s7" class="screen hidden">
+ <div class="card">
+  <h1>🤫 A Little Secret</h1>
+  <p>Swati, tumhari happiness mere liye bahut precious hai. ❤️</p>
+  <button onclick="secret()">Open My Secret 💗</button>
+  <p id="secretText" class="hidden">
+   You deserve beautiful things, endless happiness
+   and a thousand reasons to smile. 🌹💖
+  </p>
+  <button onclick="go(8)">Our Little Story ➜</button>
+ </div>
+</section>
 
-    <div id="finalMessage" class="hidden" aria-live="polite">
-      <h2>For You, Swati ❤️</h2>
+<!-- SCREEN 8 -->
+<section id="s8" class="screen hidden">
+ <div class="card">
+  <h1>🌷 Our Little Story</h1>
+  <p>🌸 A special beginning</p>
+  <p>💗 Beautiful little moments</p>
+  <p>🌹 Memories to cherish</p>
+  <p>🎂 A special birthday surprise</p>
+  <button onclick="go(9)">A Little Love 💋 ➜</button>
+ </div>
+</section>
 
-      <p>
-        Aaj tumhara special day hai, aur meri dil se dua hai
-        ki tumhari life hamesha khushiyon se bhari rahe. 🌹
-      </p>
+<!-- SCREEN 9 -->
+<section id="s9" class="screen hidden">
+ <div class="card">
+  <h1>💋 Sending You Love</h1>
+  <p>A little virtual kiss and lots of birthday wishes! 🥰</p>
+  <button onclick="kisses()">Tap For Love 💋</button>
+  <button onclick="go(10)">Your Special Gift 🎁 ➜</button>
+ </div>
+</section>
 
-      <p>
-        Tum apne dreams achieve karo, har mushkil se himmat se niklo,
-        aur kabhi apni value ko mat bhoolna. 💖
-      </p>
+<!-- SCREEN 10 -->
+<section id="s10" class="screen hidden">
+ <div class="card">
+  <h1>🎁 A Gift For Swati</h1>
+  <button style="font-size:65px" onclick="gift()">🎁</button>
+  <p>Tap the gift to open it 💝</p>
+  <p id="giftText" class="hidden">
+   Surprise, Swati! 🎉❤️
+   <br><br>
+   Meri dua hai ki tumhari life khushiyon,
+   pyaar aur success se bhari rahe. 🌹
+   <br><br>
+   Happy Birthday! 🎂
+   <br>Lots of love, Shubham 💖
+  </p>
+  <button onclick="go(11)">Final Surprise 🥹 ➜</button>
+ </div>
+</section>
 
-      <p>
-        Tumhari smile beautiful hai, tumhari happiness important hai,
-        aur tum hamesha achhi cheezon ki deserve karti ho. 🫶
-      </p>
-
-      <h2>Happy Birthday, Swati! 🎂</h2>
-      <p>With lots of love and best wishes,</p>
-      <h2>From Shubham ❤️</h2>
-      <span style="font-size:40px">💗🌹🎁✨</span>
-    </div>
-  </section>
-
-
-  <footer>
-    <h2>💖 Keep Smiling Always 💖</h2>
-    <p>Made with love, especially for Swati.</p>
-    <p>From Shubham ❤️</p>
-    <button onclick="window.scrollTo({top:0,behavior:'smooth'})">
-      Back To Top ↑
-    </button>
-  </footer>
-
-</main>
-
+<!-- SCREEN 11 -->
+<section id="s11" class="screen hidden">
+ <div class="card">
+  <div class="emoji">💖</div>
+  <h1>One Last Surprise</h1>
+  <p>
+   Swati, hamesha khush rehna, apne dreams poore karna
+   aur kabhi apni value mat bhoolna. ❤️
+  </p>
+  <h2>Happy Birthday, Swati! 🎂</h2>
+  <p>With lots of love,<br><b>From Shubham ❤️</b></p>
+  <button onclick="go(1)">Back To Start ↻</button>
+ </div>
+</section>
 
 <script>
-/* PASSCODE */
 function unlock(){
-  const code = document.getElementById("passcode").value;
-
-  if(code === "143"){
-    document.getElementById("lockScreen").classList.add("hidden");
-    document.getElementById("mainContent").classList.remove("hidden");
-
-    startCountdown();
-    window.scrollTo(0,0);
-  }else{
-    alert("Wrong Passcode ❤️ Try again!");
-  }
+ if(document.getElementById("code").value==="143"){
+  document.getElementById("lock").classList.add("hidden");
+  go(1);
+ }else{
+  alert("Wrong Passcode ❤️ Try again!");
+ }
 }
-
-document.getElementById("passcode").addEventListener("keydown",function(event){
-  if(event.key === "Enter"){
-    unlock();
-  }
+document.getElementById("code").addEventListener("keydown",e=>{
+ if(e.key==="Enter")unlock();
 });
 
-
-/* MUSIC */
-function playMusic(){
-  const music = document.getElementById("music");
-  const status = document.getElementById("musicStatus");
-
-  if(!music.paused){
-    music.pause();
-    status.textContent = "Music paused 🎵";
-    return;
-  }
-
-  music.play().then(function(){
-    status.textContent = "Now playing your song ❤️🎶";
-  }).catch(function(){
-    status.textContent = "Music nahi chala. Check karo ki music.mp3 file repository mein hai. ❤️";
-  });
+function go(n){
+ for(let i=1;i<=11;i++)
+  document.getElementById("s"+i).classList.add("hidden");
+ document.getElementById("s"+n).classList.remove("hidden");
+ window.scrollTo({top:0,behavior:"smooth"});
 }
 
+function playMusic(){
+ const m=document.getElementById("music");
+ const status=document.getElementById("musicStatus");
+ if(m.paused){
+  m.play().then(()=>status.textContent="Now playing ❤️🎶")
+  .catch(()=>status.textContent="Check music.mp3 in your repository.");
+ }else{
+  m.pause();status.textContent="Music paused 🎵";
+ }
+}
 
-/* PHOTO SLIDESHOW */
-const photos = [
-  "IMG_20260918_071323_816.jpg",
-  "IMG_20260918_071311_999.jpg",
-  "IMG_20260918_071305_113.jpg",
-  "IMG_20260918_065223_119.jpg"
+const photos=[
+ "IMG_20260918_071323_816.jpg",
+ "IMG_20260918_071311_999.jpg",
+ "IMG_20260918_071305_113.jpg",
+ "IMG_20260918_065223_119.jpg"
+];
+let pi=0;
+function changePhoto(d){
+ pi=(pi+d+photos.length)%photos.length;
+ document.getElementById("photo").src=photos[pi];
+ document.getElementById("photoCount").textContent=
+ "Memory "+(pi+1)+" of "+photos.length+" ❤️";
+}
+
+const messages=[
+"Tumhari smile bahut pyari hai ❤️",
+"Tum hamesha khush rehna 💗",
+"Tum bahut special ho 🌹",
+"Tumhare dreams poore hon ✨",
+"Tum pyaar deserve karti ho 💕",
+"Tumhari happiness important hai 🫶",
+"Tumhari smile din bana deti hai 💖",
+"Tumhari life beautiful ho 🌸",
+"Tum hamesha muskurati raho ❤️",
+"Tumhari memories special hain 💝",
+"Tumhe har din khushi mile 🌷",
+"Tum life mein success pao 💞",
+"Tum kabhi udaas na raho 🥹",
+"Tumhari duniya khushiyon se bhari rahe 🎀",
+"Tum apne aap mein unique ho 💗",
+"Tumhe hamesha respect mile 🌹",
+"Tumhare saare sapne sach hon ✨",
+"Tumhari smile kabhi kam na ho ❤️",
+"Happy Birthday, Swati 🎂",
+"Lots of love, Shubham 💖"
 ];
 
-let currentPhoto = 0;
-
-function showPhoto(index){
-  currentPhoto = (index + photos.length) % photos.length;
-
-  const slider = document.getElementById("slider");
-  slider.style.opacity = "0.25";
-
-  setTimeout(function(){
-    slider.src = photos[currentPhoto];
-    slider.style.opacity = "1";
-  },180);
-}
-
-function nextPhoto(){
-  showPhoto(currentPhoto + 1);
-}
-
-function previousPhoto(){
-  showPhoto(currentPhoto - 1);
-}
-
-document.getElementById("slider").addEventListener("error",function(){
-  this.alt = "Photo load nahi hui. Filename check karo.";
+messages.forEach((msg,i)=>{
+ const b=document.createElement("button");
+ b.innerHTML="❤️ Heart "+(i+1);
+ b.onclick=()=>document.getElementById("message").textContent=msg;
+ document.getElementById("heartGrid").appendChild(b);
 });
 
-setInterval(nextPhoto,4000);
-
-
-/* COUNTDOWN TO OCTOBER 17, 2026 */
-function startCountdown(){
-  updateCountdown();
+function secret(){
+ document.getElementById("secretText").classList.remove("hidden");
+ hearts(12);
 }
+function gift(){
+ document.getElementById("giftText").classList.remove("hidden");
+ hearts(25);
+}
+function kisses(){hearts(20);}
+function hearts(n){
+ for(let i=0;i<n;i++){
+  setTimeout(()=>{
+   const h=document.createElement("div");
+   h.className="floating";
+   h.textContent=["❤️","💕","💖","💗","🌸"][Math.floor(Math.random()*5)];
+   h.style.left=Math.random()*95+"vw";
+   h.style.fontSize=(20+Math.random()*20)+"px";
+   document.body.appendChild(h);
+   setTimeout(()=>h.remove(),5000);
+  },i*100);
+ }
+}
+setInterval(()=>hearts(1),1800);
 
 function updateCountdown(){
-  const target = new Date("2026-10-17T00:00:00");
-  const now = new Date();
-  let difference = target.getTime() - now.getTime();
-
-  const message = document.getElementById("countdownMessage");
-
-  if(difference <= 0){
-    document.getElementById("days").textContent = "00";
-    document.getElementById("hours").textContent = "00";
-    document.getElementById("minutes").textContent = "00";
-    document.getElementById("seconds").textContent = "00";
-    message.textContent = "Happy Birthday, Swati! 🎂❤️";
-    return;
-  }
-
-  const days = Math.floor(difference / (1000*60*60*24));
-  const hours = Math.floor((difference / (1000*60*60)) % 24);
-  const minutes = Math.floor((difference / (1000*60)) % 60);
-  const seconds = Math.floor((difference / 1000) % 60);
-
-  document.getElementById("days").textContent = String(days).padStart(2,"0");
-  document.getElementById("hours").textContent = String(hours).padStart(2,"0");
-  document.getElementById("minutes").textContent = String(minutes).padStart(2,"0");
-  document.getElementById("seconds").textContent = String(seconds).padStart(2,"0");
-
-  message.textContent = "October 17, 2026 ❤️";
+ const target=new Date("2026-10-17T00:00:00").getTime();
+ const diff=target-Date.now();
+ const el=document.getElementById("countdown");
+ if(diff<=0){el.textContent="Happy Birthday, Swati! 🎂❤️";return;}
+ const d=Math.floor(diff/86400000);
+ const h=Math.floor(diff%86400000/3600000);
+ const m=Math.floor(diff%3600000/60000);
+ const s=Math.floor(diff%60000/1000);
+ el.textContent=d+" days, "+h+" hours, "+m+" minutes, "+s+" seconds ❤️";
 }
-
 updateCountdown();
 setInterval(updateCountdown,1000);
-
-
-/* 20 CLICKABLE HEART MESSAGES */
-const heartMessages = [
-  "Tumhari smile bahut pyari hai. ❤️",
-  "Tum hamesha khush rehna. 💗",
-  "Tumhari memories special hain. 🌹",
-  "Tumhari khushi important hai. 🥹",
-  "Tum apne aap mein unique ho. 💕",
-  "Tum pyaar aur respect deserve karti ho. 🫶",
-  "Tumhari smile din bana sakti hai. 💖",
-  "Tumhari life beautiful ho. 🌸",
-  "Tumhare dreams poore hon. ❤️",
-  "Tumhari duniya khushiyon se bhari rahe. ✨",
-  "Tumhari memories precious hain. 💝",
-  "Tum hamesha muskurati raho. 🌷",
-  "Tumhari baatein yaad reh jaati hain. 🥰",
-  "Tum bahut special ho. 💓",
-  "Tumhe har din khushi mile. 🌹",
-  "Tumhari smile kabhi kam na ho. ❤️",
-  "Tumhara birthday yaadgaar ho. 🎀",
-  "Tumhe life mein success mile. 💞",
-  "Tum hamesha loved feel karo. 🧸",
-  "Happy Birthday, Swati! From Shubham with love. 💖"
-];
-
-const heartGrid = document.getElementById("heartGrid");
-
-heartMessages.forEach(function(message,index){
-  const button = document.createElement("button");
-  button.className = "heart-card";
-  button.innerHTML = "<span>❤️</span>Heart " + (index+1);
-
-  button.addEventListener("click",function(){
-    document.getElementById("heartMessage").textContent = message;
-    button.style.background = "#ffe0ed";
-    button.style.transform = "scale(1.03)";
-    setTimeout(function(){
-      button.style.transform = "";
-    },250);
-  });
-
-  heartGrid.appendChild(button);
-});
-
-
-/* SECRET MESSAGE */
-function revealSecret(){
-  const message = document.getElementById("secretMessage");
-  message.classList.remove("hidden");
-  createHearts(8);
-}
-
-
-/* KISS ANIMATION */
-function sendKisses(){
-  const emojis = ["💋","😘","❤️","💕","💖"];
-
-  for(let i=0;i<12;i++){
-    setTimeout(function(){
-      const kiss = document.createElement("div");
-      kiss.className = "kiss";
-      kiss.textContent = emojis[Math.floor(Math.random()*emojis.length)];
-      kiss.style.left = (5 + Math.random()*85) + "vw";
-      kiss.style.top = (35 + Math.random()*45) + "vh";
-
-      document.body.appendChild(kiss);
-
-      setTimeout(function(){
-        kiss.remove();
-      },1500);
-    },i*100);
-  }
-}
-
-function openGiftSurprise(){
-  document.getElementById("giftSurprise").classList.remove("hidden");
-  document.getElementById("giftHint").textContent =
-    "Tumhare liye dher saara pyaar, Swati! ❤️";
-
-  document.getElementById("giftButton").textContent = "💝";
-
-  createHearts(25);
-}
-
-
-/* FINAL MESSAGE */
-function showFinalMessage(){
-  document.getElementById("finalMessage").classList.remove("hidden");
-  createHearts(18);
-
-  setTimeout(function(){
-    document.getElementById("finalMessage").scrollIntoView({
-      behavior:"smooth",
-      block:"center"
-    });
-  },100);
-}
-
-
-/* FLOATING HEARTS */
-function createHearts(number){
-  for(let i=0;i<number;i++){
-    setTimeout(function(){
-      const heart = document.createElement("div");
-      heart.className = "floating-heart";
-      heart.textContent = ["❤️","💗","💕","💖","🌸"][Math.floor(Math.random()*5)];
-      heart.style.left = Math.random()*95 + "vw";
-      heart.style.fontSize = (18+Math.random()*22) + "px";
-      heart.style.animationDuration = (5+Math.random()*4) + "s";
-
-      document.body.appendChild(heart);
-
-      setTimeout(function(){
-        heart.remove();
-      },9500);
-    },i*120);
-  }
-}
-
-setInterval(function(){
-  createHearts(1);
-},900);
 </script>
-
 </body>
 </html>
-
